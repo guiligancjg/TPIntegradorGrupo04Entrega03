@@ -1,0 +1,85 @@
+0;Mariana;GANADOR;Inicial;Grupo A;Países Bajos;Qatar;1
+0;Mariana;GANADOR;Inicial;Grupo A;Ecuador;Senegal;2
+0;Mariana;EMPATE;Inicial;Grupo B;EE.UU.;Gales;0
+0;Mariana;GANADOR;Inicial;Grupo B;Irán;EE.UU.;2
+0;Mariana;GANADOR;Inicial;Grupo C;Argentina;Arabia Saudita;2
+0;Mariana;GANADOR;Inicial;Grupo C;Argentina;México;1
+0;Mariana;GANADOR;Inicial;Grupo D;Dinamarca;Francia;1
+0;Mariana;GANADOR;Inicial;Grupo D;Túnez;Dinamarca;1
+0;Mariana;GANADOR;Inicial;Grupo D;Australia;Francia;1
+0;Mariana;GANADOR;Inicial;Grupo E;Japón;Costa Rica;2
+0;Mariana;GANADOR;Inicial;Grupo E;Japón;España;1
+0;Mariana;GANADOR;Inicial;Grupo E;Costa Rica;Alemania;2
+0;Mariana;GANADOR;Inicial;Grupo F;Bélgica;Marruecos;2
+0;Mariana;GANADOR;Inicial;Grupo G;Brasil;Suiza;1
+0;Mariana;GANADOR;Inicial;Grupo H;Portugal;Uruguay;1
+0;Mariana;GANADOR;Inicial;Grupo H;Corea del Sur;Portugal;1
+0;Mariana;GANADOR;Final;Octavos;Brasil;Corea del Sur;1
+0;Mariana;GANADOR;Final;Octavos;Francia;Polonia;1
+0;Mariana;GANADOR;Final;Octavos;Portugal;Suiza;1
+0;Mariana;GANADOR;Final;Semis;Francia;Marruecos;1
+1;Pedro;GANADOR;Inicial;Grupo A;Qatar;Senegal;2
+1;Pedro;GANADOR;Inicial;Grupo B;Inglaterra;Irán;1
+1;Pedro;GANADOR;Inicial;Grupo B;Irán;EE.UU.;2
+1;Pedro;GANADOR;Inicial;Grupo C;Arabia Saudita;Polonia;2
+1;Pedro;GANADOR;Inicial;Grupo D;Dinamarca;Australia;1
+1;Pedro;GANADOR;Inicial;Grupo D;Túnez;Australia;2
+1;Pedro;GANADOR;Inicial;Grupo D;Dinamarca;Francia;1
+1;Pedro;GANADOR;Inicial;Grupo D;Túnez;Dinamarca;1
+1;Pedro;GANADOR;Inicial;Grupo E;España;Costa Rica;1
+1;Pedro;GANADOR;Inicial;Grupo E;Japón;Costa Rica;2
+1;Pedro;EMPATE;Inicial;Grupo F;Marruecos;Croacia;0
+1;Pedro;GANADOR;Inicial;Grupo F;Bélgica;Canadá;1
+1;Pedro;GANADOR;Inicial;Grupo F;Bélgica;Marruecos;2
+1;Pedro;GANADOR;Inicial;Grupo F;Croacia;Canadá;1
+1;Pedro;GANADOR;Inicial;Grupo F;Canadá;Marruecos;2
+1;Pedro;GANADOR;Inicial;Grupo G;Serbia;Suiza;2
+1;Pedro;EMPATE;Inicial;Grupo H;Uruguay;Corea del Sur;0
+1;Pedro;GANADOR;Inicial;Grupo H;Portugal;Ghana;1
+1;Pedro;GANADOR;Inicial;Grupo H;Corea del Sur;Portugal;1
+1;Pedro;GANADOR;Final;Octavos;Brasil;Corea del Sur;1
+1;Pedro;EMPATE;Final;Octavos;Marruecos;España;0
+1;Pedro;EMPATE;Final;Cuartos;Croacia;Brasil;0
+1;Pedro;GANADOR;Final;Cuartos;Marruecos;Portugal;1
+1;Pedro;GANADOR;Final;Final;Croacia;Marruecos;1
+2;Juan;GANADOR;Inicial;Grupo A;Qatar;Ecuador;2
+2;Juan;GANADOR;Inicial;Grupo A;Qatar;Senegal;2
+2;Juan;GANADOR;Inicial;Grupo A;Ecuador;Senegal;2
+2;Juan;EMPATE;Inicial;Grupo B;EE.UU.;Gales;0
+2;Juan;GANADOR;Inicial;Grupo B;Irán;Gales;1
+2;Juan;GANADOR;Inicial;Grupo B;Gales;Inglaterra;2
+2;Juan;GANADOR;Inicial;Grupo C;Argentina;Arabia Saudita;2
+2;Juan;GANADOR;Inicial;Grupo C;Arabia Saudita;México;2
+2;Juan;GANADOR;Inicial;Grupo D;Dinamarca;Australia;1
+2;Juan;GANADOR;Inicial;Grupo D;Túnez;Australia;2
+2;Juan;GANADOR;Inicial;Grupo D;Túnez;Dinamarca;1
+2;Juan;GANADOR;Inicial;Grupo D;Australia;Francia;1
+2;Juan;GANADOR;Inicial;Grupo E;Alemania;Japón;2
+2;Juan;EMPATE;Inicial;Grupo F;Marruecos;Croacia;0
+2;Juan;GANADOR;Inicial;Grupo F;Croacia;Canadá;1
+2;Juan;GANADOR;Inicial;Grupo F;Canadá;Marruecos;2
+2;Juan;GANADOR;Inicial;Grupo G;Suiza;Camerún;1
+2;Juan;GANADOR;Inicial;Grupo H;Portugal;Uruguay;1
+2;Juan;GANADOR;Inicial;Grupo H;Corea del Sur;Portugal;1
+2;Juan;GANADOR;Final;Cuartos;Inglaterra;Francia;2
+3;Sofía;GANADOR;Inicial;Grupo A;Senegal;Países Bajos;2
+3;Sofía;EMPATE;Inicial;Grupo B;EE.UU.;Gales;0
+3;Sofía;GANADOR;Inicial;Grupo B;Irán;Gales;1
+3;Sofía;GANADOR;Inicial;Grupo C;Argentina;Arabia Saudita;2
+3;Sofía;EMPATE;Inicial;Grupo C;México;Polonia;0
+3;Sofía;GANADOR;Inicial;Grupo C;Argentina;México;1
+3;Sofía;GANADOR;Inicial;Grupo C;Polonia;Argentina;2
+3;Sofía;GANADOR;Inicial;Grupo D;Túnez;Australia;2
+3;Sofía;GANADOR;Inicial;Grupo E;Costa Rica;Alemania;2
+3;Sofía;GANADOR;Inicial;Grupo F;Bélgica;Marruecos;2
+3;Sofía;GANADOR;Inicial;Grupo F;Croacia;Canadá;1
+3;Sofía;EMPATE;Inicial;Grupo F;Croacia;Bélgica;0
+3;Sofía;GANADOR;Inicial;Grupo F;Canadá;Marruecos;2
+3;Sofía;GANADOR;Inicial;Grupo G;Suiza;Camerún;1
+3;Sofía;EMPATE;Inicial;Grupo H;Uruguay;Corea del Sur;0
+3;Sofía;GANADOR;Final;Octavos;Portugal;Suiza;1
+3;Sofía;GANADOR;Final;Cuartos;Inglaterra;Francia;2
+3;Sofía;GANADOR;Final;Cuartos;Marruecos;Portugal;1
+3;Sofía;GANADOR;Final;Semis;Francia;Marruecos;1
+3;Sofía;EMPATE;Final;Final;Argentina;Francia;0
+3;Sofía;GANADOR;Final;Final;Croacia;Marruecos;1
