@@ -12,6 +12,9 @@ public class Main {
         //creo archivo resultado para filtrar los pronosticos acertados
         pronostico.puntuacion(pronosticosDAO.leerPronosticos(), resultadosDAO.leerResultados());
 
+        //Se suman puntos extraRonda cuando se aciertan todos los resultados de una ronda.
+        //Hay 8 Rondas en Fase1, por ejemplo si Mariana acierta un solo partido en las 8 Rondas tiene puntos extraFase
+        //Hay 4 Rondas en Fase1, por ejemplo si Mariana acierta un solo partido en las 4 Rondas tiene puntos extraFase
 
         String configuracion = "src/dominio/configuracion.csv";
         String resultados = "src/dominio/resultados.csv";

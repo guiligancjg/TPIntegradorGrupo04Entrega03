@@ -114,6 +114,18 @@ public class Pronosticos extends Resultados {
                              j++;
                     }//cierre while
                             i = 0;
+
+                  String nuevoTexto = "-" + ";" +
+                          "nombre" + ";" +
+                          "resultado" + ";" +
+                          "fase" + ";" +
+                          "ronda" + ";" +
+                          "equipo1" + ";" +
+                          "equipo2"+ ";" +
+                          "pronostico";
+
+                  new Archivo(archivo, nuevoTexto);//escribo el archivo
+
               }//cierre for
 
         }//cierre if, se verifica si el archivo esta vacio

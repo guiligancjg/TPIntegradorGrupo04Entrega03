@@ -1,7 +1,9 @@
 package dominio;
 
+import datos.FasesDAO;
 import datos.RondasDAO;
 import pronostico.Archivo;
+
 import java.util.*;
 
 public class AnalisisDeportivo {
@@ -16,7 +18,6 @@ public class AnalisisDeportivo {
     }
 
     public void deportivo(String resultados, String configuracion) {
-        List<String> nombres = new ArrayList<>();
         List<String> longitud = new ArrayList<>();
         List<String> listaRonda = new ArrayList<>();
         Archivo leer = new Archivo();
@@ -30,33 +31,33 @@ public class AnalisisDeportivo {
         }
 
         for (String[] filas : leer.archivo(resultados)) {//cantidad de personas
-            longitud.add(filas[0]);
+            if(!filas[1].equals("nombre")){
+                longitud.add(filas[1]);
+            }
         }
         Set<String> personas = new LinkedHashSet<>(longitud);
+        String[] persona = personas.toArray(new String[personas.size()]);
 
-        int aciertos = 0;
-        for (int i = 0; i < personas.size(); i++) {
-            for (String[] resultado : leer.archivo(resultados)) {//contar puntos
-                if (Integer.parseInt(resultado[0]) == i) {
-                    totalPuntos += punto;
-                    nombres.add(resultado[1]);
-                    listaRonda.add(resultado[4]);
+        int indice = 0;
+        //int indicePersona = 0;
+        for (String[] resultado : leer.archivo(resultados)) {//contar puntos
+            if (resultado[1].equals(persona[indice])) {
+                totalPuntos += punto;
+                listaRonda.add(resultado[4]);
+            } else {
 
-                }
+                int aciertosRondas = grupo(listaRonda);//Se suman puntos extraRonda cuando se aciertan todos los resultados de una ronda.
+                int aciertosFases = fase(listaRonda);
+                listaRonda.clear();
 
+                System.out.format("\n" + "%-10s%-10s%-10s%-10s%-10s%1s\n",persona[indice], totalPuntos, "Rondas acertadas puntos:", aciertosRondas, "Fases acertadas puntos:", aciertosFases);
+                totalPuntos += aciertosRondas + aciertosFases;
+                System.out.println("Total de puntos: " + totalPuntos);
+                totalPuntos = 0;
+                indice++;
             }
-            aciertos += grupo(listaRonda);//Se suman puntos extraRonda cuando se aciertan todos los resultados de una ronda.
 
-            listaRonda.clear();
-
-            Set<String> nombre = new LinkedHashSet<>(nombres);//me devuelve solo un nombre
-            nombres.clear();
-            System.out.format("\n" + "%-10s%-10s%-19s%-30s\n", nombre, totalPuntos, "Rondas acertadas:", aciertos);
-            totalPuntos += aciertos;
-            System.out.println("Total de puntos: "+ totalPuntos);
-            totalPuntos = 0;
         }
-
     }
 
     public int grupo(List<String> listaRonda) {
@@ -81,7 +82,54 @@ public class AnalisisDeportivo {
 
             }
 
+
         }//cierre Map
         return rondaAciertos;
     }//cierre public int grupo()
+
+    public int fase(List<String> listaRonda) {
+        List<String> listaRondaMayusculas = new ArrayList<>();
+
+        for (String elemento : listaRonda) {//saco los espacion en blanco y pongo todo a mayusculas
+            String elementoSinEspacios = elemento.replaceAll("\\s+", "");
+            String elementoEnMayusculas = elementoSinEspacios.toUpperCase();
+            listaRondaMayusculas.add(elementoEnMayusculas);
+        }
+
+        int faseAciertos = 0;
+
+        Set<String> grupos = new LinkedHashSet<>(listaRondaMayusculas);
+
+        int contFase1 = 0;
+        int contFase2 = 0;
+        for (String grupo : grupos) {
+            if (grupo.equals(RondasEnum.GRUPOA.toString()) ||
+                    grupo.equals(RondasEnum.GRUPOB.toString()) ||
+                    grupo.equals(RondasEnum.GRUPOC.toString()) ||
+                    grupo.equals(RondasEnum.GRUPOD.toString()) ||
+                    grupo.equals(RondasEnum.GRUPOE.toString()) ||
+                    grupo.equals(RondasEnum.GRUPOF.toString()) ||
+                    grupo.equals(RondasEnum.GRUPOG.toString()) ||
+                    grupo.equals(RondasEnum.GRUPOH.toString())) {
+                contFase1++;
+            }
+            if (grupo.equals(RondasEnum.OCTAVOS.toString()) ||
+                    grupo.equals(RondasEnum.CUARTOS.toString()) ||
+                    grupo.equals(RondasEnum.SEMIS.toString()) ||
+                    grupo.equals(RondasEnum.FINAL.toString())) {
+                contFase2++;
+            }
+        }//cierre for
+
+        //Hay 8 Rondas en Fase1, si Mariana acierta un equipo en todos las Rondas tiene puntos extraFase
+        //Hay 4 Rondas en Fase2, si Mariana acierta un equipo en todos las Rondas tiene puntos extraFase
+        if (contFase1 == 8) {
+            faseAciertos += extraFase;
+        }
+        if (contFase2 == 4) {
+            faseAciertos += extraFase;
+        }
+
+        return faseAciertos;
+    }
 }
