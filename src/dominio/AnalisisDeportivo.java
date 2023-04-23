@@ -1,6 +1,5 @@
 package dominio;
 
-import datos.FasesDAO;
 import datos.RondasDAO;
 import pronostico.Archivo;
 
